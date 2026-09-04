@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadro da manhã · Stefani Transporte e Logística</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- Cabeçalho: título, dia escolhido e busca -->
+  <header class="topo">
+    <div class="marca">
+      <span class="marca-bolinha"></span>
+      <div>
+        <h1>Quadro da manhã</h1>
+        <p class="marca-sub">Stefani Transporte e Logística</p>
+      </div>
+    </div>
+
+    <div class="topo-controles">
+      <label class="campo-inline">
+        <span>Dia</span>
+        <select id="seletor-dia"></select>
+      </label>
+      <label class="campo-inline">
+        <span>Buscar</span>
+        <input id="busca" type="search" placeholder="nome, placa ou cidade">
+      </label>
+    </div>
+  </header>
+
+  <!-- Aviso quando a planilha não carrega -->
+  <div id="aviso" class="aviso" hidden></div>
+
+  <!-- Números de destaque do dia -->
+  <section class="numeros">
+    <div class="numero">
+      <strong id="num-preencheram">0</strong>
+      <span>preencheram hoje</span>
+    </div>
+    <div class="numero numero-travado">
+      <strong id="num-travados">0</strong>
+      <span>travados</span>
+    </div>
+    <div class="numero">
+      <strong id="num-faltam">0</strong>
+      <span>faltam preencher</span>
+    </div>
+  </section>
+
+  <main class="conteudo">
+
+    <!-- Formulário: cada pessoa preenche seu quadrinho -->
+    <section class="formulario">
+      <h2>Meu quadrinho de hoje</h2>
+      <p class="formulario-data" id="formulario-data"></p>
+
+      <form id="form-quadrinho">
+        <label>
+          <span>Quem sou eu</span>
+          <select id="campo-nome" required></select>
+        </label>
+
+        <label>
+          <span>Fiz ontem</span>
+          <textarea id="campo-fiz-ontem" rows="2" required placeholder="O que terminei ontem"></textarea>
+        </label>
+
+        <label>
+          <span>Faço hoje</span>
+          <textarea id="campo-faco-hoje" rows="2" required placeholder="A prioridade de hoje"></textarea>
+        </label>
+
+        <label>
+          <span>Estou travado em</span>
+          <textarea id="campo-travado" rows="2" placeholder="Deixe vazio se não tem nada travando"></textarea>
+        </label>
+
+        <button type="submit" class="botao">Guardar meu quadrinho</button>
+        <p class="formulario-ok" id="formulario-ok" hidden>Guardado. Já apareceu no quadro.</p>
+      </form>
+
+      <button type="button" class="botao-discreto" id="botao-limpar">Apagar o que salvei neste navegador</button>
+    </section>
+
+    <!-- Quadro: o time inteiro lado a lado -->
+    <section class="quadro">
+      <div class="quadro-cabecalho">
+        <h2 id="quadro-titulo">O time hoje</h2>
+        <span class="legenda"><span class="legenda-cor"></span> travado</span>
+      </div>
+      <div id="cartoes" class="cartoes"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

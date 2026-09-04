@@ -1,0 +1,31 @@
+data,nome,funcao,fiz_ontem,faco_hoje,travado_em,placa,cidade,litros
+2026-08-28,Marcos Vinícius,Programação de cargas,Montei a escala de 12 carretas para Uberaba e Franca,Fechar a programação de segunda com a refinaria de Paulínia,,FKZ2B41,Uberaba,45000
+2026-08-28,Ana Paula,Faturamento,Emiti 18 CT-e da semana,Conferir as notas de Ribeirão Preto antes do fechamento,,,Ribeirão Preto,36000
+2026-08-28,Roberto,Manutenção da frota,Troquei os pneus da carreta de Araraquara,Revisar os freios do bitrem que vai para Poços de Caldas,Peça do freio só chega terça,GHT4C22,Poços de Caldas,30000
+2026-08-28,Juliana,Expedição,Carreguei 6 carretas na base de Paulínia,Organizar a fila de carregamento das 6h,,JKL9E87,Paulínia,90000
+2026-08-28,Carlos Eduardo,Atendimento ao cliente,Respondi 9 clientes sobre prazo de entrega,Ligar para o posto de Barretos sobre o atraso,Cliente de Franca sem retorno desde quarta,,Barretos,15000
+2026-08-31,Marcos Vinícius,Programação de cargas,Fechei a programação com a refinaria de Paulínia,Encaixar a carga extra de Uberlândia,Sem motorista disponível para Uberlândia,MNP3F19,Uberlândia,45000
+2026-08-31,Ana Paula,Faturamento,Conferi as notas de Ribeirão Preto,Emitir os CT-e das cargas de sexta,,,Ribeirão Preto,42000
+2026-08-31,Roberto,Manutenção da frota,Revisei a suspensão da carreta de Sertãozinho,Aguardar a peça do freio da GHT4C22,Peça do freio ainda não chegou,GHT4C22,Poços de Caldas,30000
+2026-08-31,Juliana,Expedição,Carreguei 5 carretas na base,Conferir os lacres das cargas de Franca e Bebedouro,,QRS5G34,Franca,75000
+2026-08-31,Carlos Eduardo,Atendimento ao cliente,Resolvi o atraso do posto de Barretos,Retornar ao cliente de Franca,,,Franca,15000
+2026-09-01,Marcos Vinícius,Programação de cargas,Encaixei a carga de Uberlândia com motorista reserva,Programar as entregas de Passos e Varginha,,TUV6H45,Passos,30000
+2026-09-01,Ana Paula,Faturamento,Emiti 15 CT-e,Fechar o faturamento de agosto,Nota de Uberaba veio com CNPJ errado,FKZ2B41,Uberaba,45000
+2026-09-01,Roberto,Manutenção da frota,Peça do freio chegou e instalei,Liberar a GHT4C22 para carregar,,GHT4C22,Poços de Caldas,30000
+2026-09-01,Juliana,Expedição,Conferi os lacres de Franca e Bebedouro,Carregar as 4 carretas de Minas,,WXY7J56,Araxá,60000
+2026-09-01,Carlos Eduardo,Atendimento ao cliente,Cliente de Franca confirmou a entrega,Enviar a previsão de entrega para Patos de Minas,,,Patos de Minas,30000
+2026-09-02,Marcos Vinícius,Programação de cargas,Programei Passos e Varginha,Rever a rota de São Carlos que ficou longa,,CDX-4521,São Carlos,15000
+2026-09-02,Ana Paula,Faturamento,Fechei o faturamento de agosto,Corrigir a nota de Uberaba,Ainda sem retorno do cliente sobre o CNPJ,FKZ2B41,Uberaba,45000
+2026-09-02,Roberto,Manutenção da frota,Liberei a GHT4C22,Fazer a inspeção de rotina em 3 carretas,,DEF4G56,Ribeirão Preto,
+2026-09-02,Juliana,Expedição,Carreguei as 4 carretas de Minas,Receber a carreta que volta de Araxá,,WXY7J56,Araxá,60000
+2026-09-02,Carlos Eduardo,Atendimento ao cliente,Enviei a previsão para Patos de Minas,Atender a reclamação do posto de Bebedouro,"Posto de Bebedouro diz que faltaram 200 litros, preciso da medição",QRS5G34,Bebedouro,30000
+2026-09-03,Marcos Vinícius,Programação de cargas,Encurtei a rota de São Carlos,Montar a programação de sexta,,,Paulínia,90000
+2026-09-03,Ana Paula,Faturamento,Corrigi a nota de Uberaba,Emitir os CT-e de quinta,,FKZ2B41,Uberaba,45000
+2026-09-03,Roberto,Manutenção da frota,Inspecionei 3 carretas,Trocar o pneu furado da DEF4G56,"Sem pneu no estoque, preciso comprar em Ribeirão",DEF4G56,Ribeirão Preto,45000
+2026-09-03,Juliana,Expedição,Recebi a carreta de Araxá,Carregar 5 carretas para o interior de Minas,,MNP3F19,Uberlândia,75000
+2026-09-03,Carlos Eduardo,Atendimento ao cliente,Levantei a medição do posto de Bebedouro,Fechar a reclamação junto com a expedição,Preciso da conferência de lacre da Juliana,QRS5G34,Bebedouro,30000
+2026-09-04,Marcos Vinícius,Programação de cargas,Montei a programação de sexta,Alinhar com a refinaria de Paulínia as cargas de segunda,,JKL9E87,Paulínia,90000
+2026-09-04,Ana Paula,Faturamento,Emiti os CT-e de quinta,Conferir os pagamentos de Franca e Barretos,Cliente de Barretos atrasou o pagamento,,Barretos,15000
+2026-09-04,Roberto,Manutenção da frota,Comprei o pneu em Ribeirão,Trocar o pneu e liberar a DEF4G56 até o meio-dia,,DEF4G56,Ribeirão Preto,45000
+2026-09-04,Juliana,Expedição,Carreguei 5 carretas para Minas,Conferir o lacre da carga de Bebedouro com o Carlos,,QRS5G34,Bebedouro,30000
+2026-09-04,Carlos Eduardo,Atendimento ao cliente,Aguardei a conferência de lacre,Responder ao posto de Bebedouro,Ainda sem a conferência de lacre,QRS5G34,Bebedouro,30000

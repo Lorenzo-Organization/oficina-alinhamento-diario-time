@@ -1,0 +1,424 @@
+/* Quadro da manhã · Stefani Transporte e Logística
+   Laranja da marca: #FF8A1F
+   Feito para caber em 1280 x 720 sem rolar o essencial. */
+
+:root {
+  --laranja: #FF8A1F;
+  --laranja-escuro: #d96f0d;
+  --laranja-claro: #fff1e5;
+  --fundo: #f5f5f3;
+  --branco: #ffffff;
+  --texto: #1e1e1e;
+  --texto-suave: #6b6b6b;
+  --borda: #dedcd8;
+  --verde: #2e8b57;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  color: var(--texto);
+  background: var(--fundo);
+  display: flex;
+  flex-direction: column;
+  padding: 14px 20px;
+  gap: 12px;
+  overflow: hidden;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.marca-bolinha {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--laranja);
+  flex-shrink: 0;
+}
+
+.marca h1 {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.marca-sub {
+  margin: 0;
+  color: var(--texto-suave);
+  font-size: 16px;
+}
+
+.topo-controles {
+  display: flex;
+  gap: 16px;
+}
+
+.campo-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--texto-suave);
+}
+
+.campo-inline select,
+.campo-inline input {
+  font-size: 18px;
+  padding: 8px 12px;
+  border: 2px solid var(--borda);
+  border-radius: 10px;
+  background: var(--branco);
+  min-width: 200px;
+}
+
+.campo-inline input:focus,
+.campo-inline select:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+  outline: none;
+  border-color: var(--laranja);
+}
+
+/* ---------- Aviso de erro ---------- */
+
+.aviso {
+  background: #fdecea;
+  border: 2px solid #e05252;
+  color: #7a1d1d;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.aviso code {
+  background: #fff;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+/* ---------- Números de destaque ---------- */
+
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.numero {
+  background: var(--branco);
+  border-radius: 14px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  border: 2px solid var(--borda);
+}
+
+.numero strong {
+  font-size: 44px;
+  line-height: 1;
+}
+
+.numero span {
+  font-size: 18px;
+  color: var(--texto-suave);
+}
+
+.numero-travado {
+  border-color: var(--laranja);
+  background: var(--laranja-claro);
+}
+
+.numero-travado strong {
+  color: var(--laranja-escuro);
+}
+
+/* ---------- Área principal ---------- */
+
+.conteudo {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 16px;
+  min-height: 0;
+}
+
+/* ---------- Formulário ---------- */
+
+.formulario {
+  background: var(--branco);
+  border-radius: 14px;
+  border: 2px solid var(--borda);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: auto;
+}
+
+.formulario h2 {
+  font-size: 22px;
+}
+
+.formulario-data {
+  margin: 0 0 4px;
+  color: var(--texto-suave);
+  font-size: 15px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 15px;
+  color: var(--texto-suave);
+  font-weight: 600;
+}
+
+.formulario select,
+.formulario textarea {
+  font-family: inherit;
+  font-size: 17px;
+  color: var(--texto);
+  padding: 7px 10px;
+  border: 2px solid var(--borda);
+  border-radius: 10px;
+  resize: none;
+  background: var(--branco);
+}
+
+.botao {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--branco);
+  background: var(--laranja);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.botao:hover {
+  background: var(--laranja-escuro);
+}
+
+.formulario-ok {
+  margin: 0;
+  color: var(--verde);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.botao-discreto {
+  margin-top: auto;
+  background: none;
+  border: none;
+  color: var(--texto-suave);
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: left;
+  padding: 4px 0 0;
+}
+
+/* ---------- Quadro do time ---------- */
+
+.quadro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+}
+
+.quadro-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quadro h2 {
+  font-size: 22px;
+}
+
+.legenda {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--texto-suave);
+  font-size: 16px;
+}
+
+.legenda-cor {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  background: var(--laranja);
+}
+
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 12px;
+  min-height: 0;
+  overflow: auto;
+}
+
+.cartao {
+  background: var(--branco);
+  border: 2px solid var(--borda);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+}
+
+.cartao-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cartao-nome {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.cartao-funcao {
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+.cartao-etiqueta {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.cartao-linha {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.cartao-linha span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--texto-suave);
+  font-weight: 700;
+}
+
+.cartao-linha p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cartao-extras {
+  margin-top: auto;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cartao-extras span {
+  font-size: 13px;
+  background: var(--fundo);
+  border-radius: 6px;
+  padding: 2px 8px;
+  color: var(--texto-suave);
+}
+
+/* Pessoa travada: borda laranja e etiqueta */
+.cartao.travado {
+  border-color: var(--laranja);
+  border-width: 3px;
+  background: var(--laranja-claro);
+}
+
+.cartao.travado .cartao-etiqueta {
+  background: var(--laranja);
+  color: var(--branco);
+}
+
+.cartao.travado .cartao-linha.travado-em p {
+  font-weight: 700;
+  color: var(--laranja-escuro);
+}
+
+/* Pessoa que ainda não preencheu: borda tracejada */
+.cartao.vazio {
+  border-style: dashed;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--texto-suave);
+}
+
+.cartao.vazio .cartao-nome {
+  color: var(--texto);
+}
+
+.cartao.vazio .cartao-aviso {
+  font-size: 16px;
+  margin: 6px 0 0;
+}
+
+.cartao.escondido {
+  display: none;
+}
+
+.sem-resultado {
+  grid-column: 1 / -1;
+  color: var(--texto-suave);
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
